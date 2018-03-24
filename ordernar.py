@@ -11,7 +11,9 @@
 def main():
 
 	num1 = 0; num2=0; num3=0; num4 = 0;
-
+	
+	print("Digite 3 números reais e veja o resultado na ordem crescente:\n");
+	
 	num1 = int(input('Digite o 1º número: ')) 
 	num2 = int(input('Digite o 2º número: ')) 
 	num3 = int(input('Digite o 3º número: '))
@@ -42,11 +44,11 @@ def main():
 		
 		num4 = num2 #temporario
 		if num1 >= num3:
-			print("Veja que o 1º número digitado é maior ou (igual) o 3º.\nEntão a ordem fica \"num1 = num2 \" \"num2 = num3\" e \"num3 = num1\" \n");
+			print("Veja que o 1º número digitado é maior ou (igual) o 3º.\nEntão a ordem fica \"num1 = num2\" \"num2 = num3\" e \"num3 = num1\" \n");
 			num2 = num3
 			num3 = num1
 		else:
-			print("Veja que o 3º número digitado é maior ou (igual) o 1º.\nEntão a ordem fica \"num1 = num2 \" \"num2 = num1\" e \"num3 = num3\" \n");
+			print("Veja que o 3º número digitado é maior ou (igual) o 1º.\nEntão a ordem fica \"num1 = num2\" \"num2 = num1\" e \"num3 = num3\" \n");
 			num2 = num1
 		
 		num1 = num4
@@ -60,16 +62,16 @@ def main():
 		
 		num4 = num3 #temporario
 		if num1 >= num2:
-			print("Veja que o 1º número é maior ou (igual) o 2º,\nEntão a ordem fica \"num1 = num3 \" \"num2 = num2\" e \"num3 = num1\" \n");
+			print("Veja que o 1º número é maior ou (igual) o 2º,\nEntão a ordem fica \"num1 = num3\" \"num2 = num2\" e \"num3 = num1\" \n");
 			num3 = num1
 		else:
-			print("Veja que o 1º número é menor ou (igual) o 2º,\nentão a ordem fica \"num1 = num3 \" \"num2 = num1\" e \"num3 = num2\" \n");
+			print("Veja que o 1º número é menor ou (igual) o 2º,\nentão a ordem fica \"num1 = num3\" \"num2 = num1\" e \"num3 = num2\" \n");
 			num3 = num2
 			num2 = num1
 		
 		num1 = num4;
 			
-	print(num1,' ',num2,' ',num3)
+	print('Resultado: ',num1,' ',num2,' ',num3)
 
 	return 0
 
