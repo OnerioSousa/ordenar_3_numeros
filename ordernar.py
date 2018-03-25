@@ -14,9 +14,9 @@ def main():
 	
 	print("Digite 3 números reais e veja o resultado na ordem crescente:\n");
 	
-	num1 = int(input('Digite o 1º número: ')) 
-	num2 = int(input('Digite o 2º número: ')) 
-	num3 = int(input('Digite o 3º número: '))
+	num1 = float(input('Digite o 1º número: ')) 
+	num2 = float(input('Digite o 2º número: ')) 
+	num3 = float(input('Digite o 3º número: '))
 	
 	print('--------------------------')
 	
@@ -31,6 +31,7 @@ def main():
 		
 		print("O primeiro número é o menor de todos.\nTenho apenas que ordernar o 2º e 3º número.\n* A variavel num1 permanece com o mesmo valor.\n"); 
 		
+		num4 = num2 #temporario
 		if num2 > num3:
 			num2 = num3
 			num3 = num4
